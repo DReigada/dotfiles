@@ -4,8 +4,23 @@
 # OS X Shell Settings
 #
 
+
+if [[ "$ZSH_NAME" = "zsh" && -z "$TMUX" && -z "$EMACS" && -z "$VIM" && "$OSTYPE" == "darwin"* ]]; then
+  tmux_session='dreigada'
+  tmux start-server
+
+  # Create a '$tmux_session' session if no session has been defined in tmux.conf
+  if ! tmux has-session 2> /dev/null; then
+    tmux_session='dreigada'
+    tmux new-session -d -s "$tmux_session"
+  fi
+
+  # Attach to last session
+  exec tmux attach -t "$tmux_session"
+fi
+
 # Force my HOME (sudo compatibility)
-export DEFAULT_USER="rtfpessoa"
+export DEFAULT_USER="dreigada"
 
 # Want your terminal to support 256 color schemes? I do ...
 export TERM="xterm-256color"
@@ -112,6 +127,8 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
   # Mac OS DNS Cache Reset
   alias dns-reset-cache='sudo killall -HUP mDNSResponder'
 fi
+
+alias docker-ssh='screen ~/Library/Containers/com.docker.docker/Data/com.docker.driver.amd64-linux/tty'
 
 # Copy cmds
 alias dklogs='docker logs --tail 10000 -f $(docker ps -q -a)'
@@ -230,12 +247,12 @@ export PATH
 
 tmuxed() {
   if [[ "$OSTYPE" =~ "darwin" && "$ZSH_NAME" = "zsh" && -z "$TMUX" && -z "$EMACS" && -z "$VIM" && -z "$SSH_TTY" ]]; then
-    tmux_session='rtfpessoa'
+    tmux_session='dreigada'
     tmux start-server
 
     # Create a '$tmux_session' session if no session has been defined in tmux.conf
     if ! tmux has-session 2> /dev/null; then
-      tmux_session='rtfpessoa'
+      tmux_session='dreigada'
       tmux new-session -d -s "$tmux_session"
     fi
 

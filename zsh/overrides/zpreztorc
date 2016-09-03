@@ -43,7 +43,20 @@ zstyle ':prezto:load' pmodule \
   'syntax-highlighting' \
   'utility' \
   'prompt' \
-  'command-not-found'
+  'command-not-found' \
+  'node' \
+  'ruby' \
+  'rails' \
+  'ssh' \
+  'gpg'
+
+# Disabled plugins
+# 'homebrew' # I have my own aliases
+# 'autosuggestions'
+# 'rsync'
+# 'python'
+# 'haskell'
+# 'tmux'
 
 #
 # Editor
