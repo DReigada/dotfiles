@@ -1,5 +1,5 @@
 #
-# rtfpessoa bash settings
+# dreigada bash settings
 #
 
 DOTFILES_DEFAULT="$HOME/.$(whoami)rc"
@@ -20,3 +20,16 @@ fi
 if [[ -s "$HOME/.rbenv/bin/rbenv" ]]; then
 	eval "$($HOME/.rbenv/bin/rbenv init - --no-rehash zsh)"
 fi
+
+#sublime text
+export PATH=$PATH:/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/
+
+#Psql app
+export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
+
+
+#Docker
+source ~/.docker_aliases
+
+#Git
+source ~/.git-completion.bash
