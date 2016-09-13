@@ -41,6 +41,9 @@ brew 'openssl'
 brew 'gnupg2'
 brew 'gpg-agent'
 
+# Network
+#brew 'ngrok'
+
 # Random
 brew 'fasd'
 brew 'sqlite'
