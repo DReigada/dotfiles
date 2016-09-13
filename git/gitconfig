@@ -4,21 +4,24 @@
 
 # core {{{
 [core]
-  editor = vim
+  editor = subl -n -w
   pager = less -x4
   quotepath = false
   ignorecase = false
 	excludesfile = ~/.gitignore
 
+[commit]
+  gpgsign = true
+  
 #}}}
 # user {{{
 [user]
-  email = rtfrodrigo@gmail.com
-  name = Rodrigo Fernandes
-  signingkey = 17C96426
+  name = Daniel Reigada
+  email = daniel@codacy.com
+  signingkey = 1C0E16ABA88226AB
 
 [github]
-  user = rtfrodrigo@gmail.com
+  user = daniel.reigada@gmail.com
 
 #}}}
 # color {{{

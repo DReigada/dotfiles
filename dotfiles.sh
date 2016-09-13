@@ -1,6 +1,6 @@
 #!/bin/bash
 
-CLONE_URL_DEFAULT=https://github.com/rtfpessoa/dotfiles
+CLONE_URL_DEFAULT=https://github.com/dreigada/dotfiles
 DOTFILES_NAME=".$(whoami)rc"
 DOTFILES_PATH="$HOME"
 
