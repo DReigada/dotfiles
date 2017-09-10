@@ -4,7 +4,7 @@
 
 # core {{{
 [core]
-  editor = subl -n -w
+	editor = vim
   pager = less -x4
   quotepath = false
   ignorecase = false
@@ -190,3 +190,5 @@
 	gpgSign = true
 [tag]
 	forceSignAnnotated = true
+[init]
+	templatedir = ~/.git_template
