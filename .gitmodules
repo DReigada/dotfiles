@@ -11,3 +11,9 @@
 [submodule "vim/bundle/gundo"]
 	path = vim/bundle/gundo
 	url = https://github.com/sjl/gundo.vim.git
+[submodule "zsh/custom/plugins/touchbar"]
+	path = zsh/plugins/touchbar
+	url = git@github.com:iam4x/zsh-iterm-touchbar.git
+[submodule "zsh/plugins/touchbar"]
+	path = zsh/plugins/touchbar
+	url = git@github.com:iam4x/zsh-iterm-touchbar.git

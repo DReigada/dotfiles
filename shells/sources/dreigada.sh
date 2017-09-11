@@ -1,9 +1,6 @@
 #Psql 
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
 
-#Docker
-source ~/.docker_aliases
-
 #Codacy Aliases
 alias jmp-db='/Users/dreigada/Workspace/codacy-scripts/dbs/srv_db.sh $@'
 alias ds='while true; do TEXT=$(docker stats --no-stream $(docker ps --format="{{.Names}}")); sleep 0.1; clear; echo "$TEXT"; done'
