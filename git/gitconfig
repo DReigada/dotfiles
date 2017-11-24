@@ -18,7 +18,7 @@
 [user]
   name = Daniel Reigada
   email = daniel@codacy.com
-  signingkey = 1C0E16ABA88226AB
+  signingkey = 12F6A8E8CD125BF4
 
 [github]
   user = daniel.reigada@gmail.com
@@ -183,6 +183,7 @@
 
     ## List remotes
     rem="!git config -l | grep remote.*url | tail -n +2"
+	up = pull --rebase --autostash
 # }}}
 [gpg]
 	program = /usr/local/bin/krgpg
