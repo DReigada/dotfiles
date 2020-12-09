@@ -16,6 +16,8 @@ task install: [:update] do
     install_homebrew_and_packages
   end
 
+  install_asdf if want_to_install?('asdf')
+
   install_files Dir.glob('git/*') if want_to_install?('git configs (color, aliases)')
   install_files Dir.glob('tmux/*') if want_to_install?('tmux config')
   install_file File.expand_path('vim'), "#{ENV['HOME']}/.vim" if want_to_install?('vim configuration')
@@ -202,8 +204,6 @@ def install_ubuntu_packages
 
   # Work
   run %(sudo apt -y install openvpn)
-
-  install_asdf if want_to_install?('asdf')
 
   puts
   puts

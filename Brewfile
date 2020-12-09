@@ -20,8 +20,8 @@
 # brew 'vim'
 #
 # # Shell
-# brew 'fish'
-# brew 'tmux'
+brew 'fish'
+brew 'tmux'
 #
 # # Downloads
 # brew 'axel'

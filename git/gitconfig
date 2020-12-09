@@ -13,11 +13,11 @@
 #}}}
 # user {{{
 [user]
-  email = rtfrodrigo@gmail.com
-  name = Rodrigo Fernandes
+  email = daniel.reigada@gmail.com
+  name = Daniel Reigada
 
 [github]
-  user = rtfrodrigo@gmail.com
+  user = daniel.reigada@gmail.com
 
 [gpg]
 	program = /usr/bin/krgpg
@@ -103,8 +103,8 @@
   lg = log --pretty=format:'%Cred%h%Creset -%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
   lag = log --graph
   lagp = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
-  stup = log --pretty=format:'%Cred%h%Creset -%Creset %s %Cgreen(%cD) %C(bold blue)<%an>%Creset' --author=Rodrigo
-  standup = log --pretty=format:'%Cred%h%Creset -%Creset %s %Cgreen(%cD) %C(bold blue)<%an>%Creset' --since yesterday --author=Rodrigo
+  stup = log --pretty=format:'%Cred%h%Creset -%Creset %s %Cgreen(%cD) %C(bold blue)<%an>%Creset' --author=Daniel
+  standup = log --pretty=format:'%Cred%h%Creset -%Creset %s %Cgreen(%cD) %C(bold blue)<%an>%Creset' --since yesterday --author=Daniel
 
   # Diff
   d = "!f() { git diff -M -C -U10 --patience "$(git symbolic-ref --short HEAD)" "$1"; }; f"
