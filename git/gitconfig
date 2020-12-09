@@ -20,7 +20,7 @@
   user = daniel.reigada@gmail.com
 
 [gpg]
-	program = /usr/bin/krgpg
+	program = /usr/local/bin/krgpg
 
 [commit]
 	gpgSign = true
@@ -192,8 +192,8 @@
 # }}}
 
 [core]
-    pager = delta --plus-color="#012800" --minus-color="#340001" --theme='Monokai Extended'
+    # pager = delta --plus-color="#012800" --minus-color="#340001" --theme='Monokai Extended'
 
 [interactive]
-    diffFilter = delta --color-only
+    # diffFilter = delta --color-only
 
