@@ -5,7 +5,7 @@
 #
 
 # Force my HOME (sudo compatibility)
-export_globally DEFAULT_USER "rtfpessoa"
+export_globally DEFAULT_USER "dreigada"
 
 # Want your terminal to support 256 color schemes? I do ...
 export_globally TERM "xterm-256color"

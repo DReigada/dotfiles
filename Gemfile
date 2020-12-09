@@ -1,5 +1,5 @@
 #
-# rtfpessoa Gem file
+# dreigada Gem file
 #
 
 source 'https://rubygems.org'

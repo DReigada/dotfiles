@@ -31,7 +31,7 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/JackHack96/dell-xps-9570
 **To setup the dotfiles**
 
 ```sh
-bash -c "`curl -fsSL https://raw.githubusercontent.com/rtfpessoa/dotfiles/master/dotfiles.sh`" -s -c install
+bash -c "`curl -fsSL https://raw.githubusercontent.com/dreigada/dotfiles/master/dotfiles.sh`" -s -c install
 ```
 
 > The installation directory is `$HOME/.$(whoami)rc`
