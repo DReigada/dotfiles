@@ -56,7 +56,7 @@
 # }}}
 # push/pull/diff/options {{{
 [push]
-  default = upstream
+	default = current
 [pull]
   default = current
 [diff]
@@ -83,6 +83,7 @@
   gr = grep -Ii
   upsm = "!f() { git pull --rebase --autostash --recurse-submodules && git submodule update --init --recursive --remote --force --jobs 8 && git submodule status --recursive; }; f"
   clean-pack = "!f() { git fetch -p --all --progress && git gc --aggressive --prune=all --force; }; f"
+  up = pull --rebase --autostash
 
   # Commit
   c = commit -S
@@ -197,3 +198,8 @@
 [interactive]
     # diffFilter = delta --color-only
 
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
