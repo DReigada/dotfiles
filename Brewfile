@@ -65,3 +65,4 @@ brew 'ripgrep'
 
 brew 'gnupg'
 brew 'pgcli'
+brew 'awscli'
