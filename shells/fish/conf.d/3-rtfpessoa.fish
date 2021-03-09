@@ -75,3 +75,6 @@ add_to_path "$HOME/.cargo/bin"
 # asdf
 source $HOME/.asdf/asdf.fish
 source $HOME/.asdf/completions/asdf.fish
+
+# direnv
+direnv hook fish | source

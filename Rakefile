@@ -252,7 +252,7 @@ def install_asdf
 
   run %(#{ENV['HOME']}/.asdf/bin/asdf update)
 
-  ["bat", "doctl", "gcloud", "github-cli", "golang", "graalvm", "helm", "k9s", "kubectl", "minikube", "ripgrep", "rust", "saml2aws", "sbt", "scala", "terraform", "terraform-lsp", "vim", "yq"].map do |package_name|
+  ["bat", "doctl", "gcloud", "github-cli", "golang", "graalvm", "helm", "k9s", "kubectl", "minikube", "ripgrep", "rust", "saml2aws", "sbt", "scala", "terraform", "terraform-lsp", "vim", "yq", "direnv"].map do |package_name|
     install_asdf_package package_name
   end
 
