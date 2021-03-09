@@ -55,10 +55,13 @@ brew 'tmux'
 #
 # # Others
 # brew 'protobuf'
-# brew 'htop'
-# brew 'ripgrep'
+brew 'htop'
+brew 'ripgrep'
 # brew 'jq'
 # brew 'ffmpeg'
 # brew 'youtube-dl'
 # brew 'watch'
 #
+
+brew 'gnupg'
+brew 'pgcli'

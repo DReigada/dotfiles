@@ -210,13 +210,13 @@ def install_ubuntu_packages
 end
 
 def install_asdf_package(package_name, global: true, version: nil, plugin_url: nil)
-  if version.nil?
-    version = run %(#{ENV['HOME']}/.asdf/bin/asdf latest #{package_name})
-  end
   if plugin_url.nil?
     run %(#{ENV['HOME']}/.asdf/bin/asdf plugin add #{package_name})
   else
     run %(#{ENV['HOME']}/.asdf/bin/asdf plugin add #{package_name} #{plugin_url})
+  end
+  if version.nil?
+    version = run %(#{ENV['HOME']}/.asdf/bin/asdf latest #{package_name})
   end
   run %(#{ENV['HOME']}/.asdf/bin/asdf install #{package_name} #{version})
   if global == true
