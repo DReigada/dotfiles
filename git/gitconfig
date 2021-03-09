@@ -19,8 +19,8 @@
 [github]
   user = daniel.reigada@gmail.com
 
-[gpg]
-	program = /usr/local/bin/krgpg
+# [gpg]
+# 	program = /usr/local/bin/krgpg
 
 [commit]
 	gpgSign = true
