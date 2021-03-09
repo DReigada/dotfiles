@@ -73,7 +73,7 @@ def install_homebrew_and_packages
     puts "Installing Homebrew, the OSX package manager...If it's"
     puts 'already installed, this will do nothing.'
     puts '======================================================'
-    run %(curl -fsSL "https://raw.githubusercontent.com/Homebrew/install/master/install" | ruby)
+    run %(/bin/bash -c "`curl -fsSL 'https://raw.githubusercontent.com/Homebrew/install/master/install'`")
   end
 
   puts
