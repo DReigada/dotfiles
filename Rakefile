@@ -257,11 +257,15 @@ def install_asdf
   end
 
   install_asdf_package "jq", plugin_url:"https://github.com/AZMCode/asdf-jq.git"
-
+  
   # Java
   install_asdf_package "java", global:false, version:"adoptopenjdk-8.0.275+1"
   install_asdf_package "java", global:false, version:"adoptopenjdk-11.0.9+101"
   install_asdf_package "java", version:"corretto-11.0.9.12.1"
+
+  # clojure
+  install_asdf_package "lein", plugin_url:"https://github.com/miorimmax/asdf-lein.git"
+  install_asdf_package "clojure", plugin_url:"https://github.com/asdf-community/asdf-clojure.git"
 
   # Node.JS
   run %(#{ENV['HOME']}/.asdf/bin/asdf plugin add nodejs)
