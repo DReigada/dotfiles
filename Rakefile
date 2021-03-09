@@ -248,6 +248,8 @@ def install_asdf
   puts 'Installing asdf packages.'
   puts '======================================================'
 
+  run %(bash #{ENV['HOME']}/.asdf/asdf.sh)
+
   run %(#{ENV['HOME']}/.asdf/bin/asdf update)
 
   ["bat", "doctl", "gcloud", "github-cli", "golang", "graalvm", "helm", "k9s", "kubectl", "minikube", "ripgrep", "rust", "saml2aws", "sbt", "scala", "terraform", "terraform-lsp", "vim", "yq"].map do |package_name|
